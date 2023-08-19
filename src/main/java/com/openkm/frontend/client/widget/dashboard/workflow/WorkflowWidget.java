@@ -178,7 +178,7 @@ public class WorkflowWidget extends Composite {
 			}
 
 			Anchor taskName = new Anchor();
-			taskName.setText(taskInstanceResult.getName());
+			taskName.setText(taskInstanceResult.getLabel());
 			taskName.setTitle(taskInstanceResult.getProcessInstance().getProcessDefinition().getName());
 
 			switch (widgetType) {

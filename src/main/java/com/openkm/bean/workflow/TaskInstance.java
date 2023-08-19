@@ -53,6 +53,11 @@ public class TaskInstance implements Serializable, Comparable<TaskInstance> {
 	private List<Transition> availableTransitions;
 	private Map<String, Object> variables;
 	private ProcessInstance processInstance;
+	
+	public String getLabel() {
+		if (variables != null && variables.containsKey("label")) return variables.get("label").toString();
+		return getName();
+	}
 
 	public String getName() {
 		return name;

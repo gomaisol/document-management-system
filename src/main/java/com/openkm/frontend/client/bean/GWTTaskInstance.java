@@ -36,6 +36,7 @@ public class GWTTaskInstance implements IsSerializable {
 
 	private double id;
 	private String name;
+	private String label;
 	private String description;
 	private String actorId;
 	private Date create;
@@ -49,7 +50,14 @@ public class GWTTaskInstance implements IsSerializable {
 	 */
 	public GWTTaskInstance() {
 	}
+	public String getLabel() {
+		if (label == null) return getName();
+		return label;
+	}
 
+	public void setLabel(String label) {
+		this.label = label;
+	}
 	public double getId() {
 		return id;
 	}

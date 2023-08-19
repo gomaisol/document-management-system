@@ -661,6 +661,7 @@ public class GWTUtil {
 		gWTTaskInstance.setCreate(taskInstance.getCreate().getTime());
 		gWTTaskInstance.setId(taskInstance.getId());
 		gWTTaskInstance.setName(taskInstance.getName());
+		gWTTaskInstance.setLabel(taskInstance.getLabel());
 		gWTTaskInstance.setProcessInstance(copy(taskInstance.getProcessInstance()));
 		gWTTaskInstance.setDescription(taskInstance.getDescription());
 
